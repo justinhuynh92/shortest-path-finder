@@ -14,3 +14,12 @@ maze = [
     ["#", " ", " ", " ", " ", " ", " ", " ", "#"],
     ["#", "#", "#", "#", "#", "#", "#", "X", "#"]
 ]
+
+def main(stdscr):
+    stdscr.clear()
+    stdscr.addstr(0, 0, "hello world!")
+    stdscr.refresh()
+    stdscr.getch()
+
+# pass name of the function
+wrapper(main)
